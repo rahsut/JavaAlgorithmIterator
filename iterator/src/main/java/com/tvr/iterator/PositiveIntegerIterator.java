@@ -30,7 +30,7 @@ public class PositiveIntegerIterator implements Iterator<Integer> {
 		if(hasNext()) {
             return intArrayList.get(currentSize++);
         } else {
-            throw new NoSuchElementException("There are no elements size = " + intArrayList.size());
+            throw new NoSuchElementException(" NoSuchElementException for size = " + intArrayList.size());
         }
 	}
 	
