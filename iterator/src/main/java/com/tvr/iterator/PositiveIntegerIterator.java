@@ -7,10 +7,14 @@ import java.util.NoSuchElementException;
 
 public class PositiveIntegerIterator implements Iterator<Integer> {
 	
-	 private List<Integer> intArrayList =new ArrayList<Integer>();
+	 private List<Integer> intArrayList;
 	 private int currentSize;
-	    
+	
+	
+        private PositiveIntegerIterator();
+	
 	public PositiveIntegerIterator(Iterator<Integer> i) {
+	        intArrayList=new ArrayList<Integer>();
 		while(i.hasNext()){
 			Integer iInt = i.next();
 			if(!(iInt==null||iInt<0)){
